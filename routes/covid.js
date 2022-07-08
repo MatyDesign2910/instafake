@@ -2,7 +2,7 @@ const { jwtAuth } = require('./../middleware/jwtVerify')
 const { Covid19 } = require('../services/covidApi')
 
 const filteredChile = (data) => {
-    return data.filter(country => country['Country/Region'] === 'Chile')[0]
+    return data.filter(country => country['Country/Region'] === 'US')[0]
 }
 
 const formatResponse = (data) => {
