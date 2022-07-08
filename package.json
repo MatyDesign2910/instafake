@@ -1,4 +1,5 @@
 {
+  "homepage": "https://matydesign2910.github.io/instafake/desafio-instafake/",
   "name": "api-jwt-example",
   "version": "1.0.0",
   "description": "",
@@ -10,9 +11,11 @@
     "jsonwebtoken": "8.5.1"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "nodemon": "2.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "watch": "nodemon index.js --port=3000"
   },
   "keywords": [],
